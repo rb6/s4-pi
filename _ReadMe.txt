@@ -1,7 +1,7 @@
 File structure that these scripts expect.
 
 All scripts reside in the /home/pi/Desktop/Scripts folder
-By in large they should not be dependent on where they are
+The scripts are not really dependent on where they are located
 because the paths to other folders are hard-coded, not
 from a relative path.
 
