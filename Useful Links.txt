@@ -1,0 +1,11 @@
+http://www.raspberrypi-spy.co.uk/2013/05/capturing-hd-video-with-the-pi-camera-module/
+http://raspi.tv/2013/another-way-to-convert-raspberry-pi-camera-h264-output-to-mp4
+
+https://astro-pi.org/
+
+https://www.raspberrypi.org/products/sense-hat/
+https://pythonhosted.org/sense-hat/
+
+https://www.raspberrypi.org/products/camera-module-v2/
+https://www.raspberrypi.org/learning/getting-started-with-picamera/
+
