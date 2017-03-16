@@ -19,9 +19,9 @@ joystick = SenseStick()
 filestamp = localtime()
 delay = 1 #use this number to set the delay between camera captures in seconds
 pic_number = 1 #this is the starting number for taking pictures
-pic_dir = "/home/pi/Desktop/Pictures" + repr(filestamp.tm_year)+'-'+repr(filestamp.tm_mon)+'-'+repr(filestamp.tm_mday)+'__'+repr(filestamp.tm_hour)+'-'+repr(filestamp.tm_min)
-system_command = "mkdir " + pic_dir
-os.system(system_command)
+pic_dir = "/home/pi/Desktop/Pictures_" + repr(filestamp.tm_year)+'-'+repr(filestamp.tm_mon)+'-'+repr(filestamp.tm_mday)+'__'+repr(filestamp.tm_hour)+'-'+repr(filestamp.tm_min)
+if not os.path.isdir(pic_dir):
+    os.makedirs(pic_dir)
 camera_check = True
 
 ## This is the main picture taking loop

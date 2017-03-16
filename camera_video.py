@@ -29,6 +29,8 @@ camera.framerate = 90
 #initializing additional variables
 filestamp = localtime()
 vid_dir = '/home/pi/Desktop/Videos/'
+if not os.path.isdir(vid_dir):
+    os.makedirs(vid_dir)
 vid_name = 'Video_'+repr(filestamp.tm_year)+'-'+repr(filestamp.tm_mon)+'-'+repr(filestamp.tm_mday)+'__'+repr(filestamp.tm_hour)+'-'+repr(filestamp.tm_min)+'.h264'
 camera_check = True
 old_time = time()

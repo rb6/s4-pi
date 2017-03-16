@@ -51,8 +51,9 @@ led_display.init_display()
 #opening the output files
 filestamp = localtime()
 directory = '/home/pi/Desktop/data/'
+if not os.path.isdir(directory):
+    os.makedirs(directory)
 data_filename = directory + repr(filestamp.tm_year)+'-'+repr(filestamp.tm_mon)+'-'+repr(filestamp.tm_mday)+'__'+repr(filestamp.tm_hour)+'-'+repr(filestamp.tm_min)+'_data.csv'
-gps_filename = directory + repr(filestamp.tm_year)+'-'+repr(filestamp.tm_mon)+'-'+repr(filestamp.tm_mday)+'__'+repr(filestamp.tm_hour)+'-'+repr(filestamp.tm_min)+'_gps.csv'
 f = open(data_filename, 'w')
 
 
