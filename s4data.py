@@ -6,7 +6,7 @@ import time
 from sense_hat import SenseHat
 from stick import SenseStick
 import threading
-import led_display_v2
+import led_display
 
 
 #bunch of code necessary to make everything work
@@ -46,7 +46,7 @@ min_pressure = sense.get_pressure()
 start_pressure = min_pressure
 start_alt_ft = 0.0
 max_alt_ft = 0.0
-led_display_v2.init_display()
+led_display.init_display()
 
 #opening the output files
 filestamp = localtime()
@@ -63,7 +63,7 @@ f = open(data_filename, 'w')
 while True:
     timestamp = time.time()
     data_record(timestamp)
-    led_display_v2.data_display('data')
+    led_display.data_display('data')
     
     #checking if the center joystick has been pushed
     stick_press = stick.wait(timeout=0.01)

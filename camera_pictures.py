@@ -5,7 +5,7 @@ from time import *
 from picamera import PiCamera
 import threading
 from stick import SenseStick
-import led_display_v2
+import led_display
 
 #initializing the camera
 camera = PiCamera()
@@ -29,7 +29,7 @@ while camera_check:
     camera.capture(pic_dir + '/image%s.jpg' % pic_number)
     pic_number += 1
 
-    led_display_v2.data_display('camera')
+    led_display.data_display('camera')
 
     joystick_press = joystick.wait(timeout=delay)
     if joystick_press:

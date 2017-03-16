@@ -11,10 +11,10 @@ sense_display = SenseHat()
 
 #thinking the colors will be the following:
 #Data Record: Background=Purple, Foreground=Yellow
-#Camera Record: Background=Blue, Foreground=Orange
+#Camera Record: Background=Green, Foreground=Orange
 P = (128, 0, 128)
 Y = (255, 255, 0)
-B = (0, 0, 255)
+B = (0, 255, 0)
 O = (255, 163, 0)
 display_counter_data = 0
 display_counter_camera = 48

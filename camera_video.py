@@ -5,7 +5,7 @@ from time import *
 from picamera import PiCamera
 import threading
 from stick import SenseStick
-import led_display_v2
+import led_display
 
 
 #initializing the camera
@@ -38,7 +38,7 @@ camera.start_recording(vid_dir+vid_name) #start recording the video
 while camera_check:
     cur_time = time()
     if ((cur_time-old_time) >= 1.0):
-        led_display_v2.data_display('camera')
+        led_display.data_display('camera')
 
     joystick_press = joystick.wait(timeout = 1)
     if joystick_press:
